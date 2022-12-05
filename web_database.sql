@@ -100,3 +100,19 @@ create table order_product(
     foreign key (`order_id`) references orders(`order_id`),
     foreign key (`product_id`) references products(`product_id`)
 );
+
+insert into brands ( `brand_id`,`brand_name` ,`create_date`) values
+('1','Adidas','22/02/2022'),
+('2','Nike','22/02/2022'),
+('3','Zara','22/02/2022'),
+('4','Viettien','22/02/2022')
+
+insert into products (`product_id`,`product_name` , `brand_id`, `description`, `created_date`, `price`, `product_image`, `product_stock`, `hidden`) 
+values
+('001','Áo thun xanh mint','1','Hàng Việt Nam dành cho người Việt nam chất lượng cao','22/10/2022','300.000 VNĐ','/asset/img/ao-thun1.jpg','20','1'),
+('002','Quần jeans đen','1','danh cho nguoi gay','22/10/2022','350.000 VNĐ','/asset/img/quan-jean1.jpg','20','1'),
+('003','Váy JK xanh biển','2','Được may từ vải cotton chất lượng cao','22/10/2022','200.000 VNĐ','/asset/img/vay-jk1.jpg','20','1'),
+('004','Váy Sunflower','2','Váy sịn sò mặc vào là xinh nhé','22/10/2022','950.000 VNĐ','/asset/img/dam-hoa.jpg','20','1'),
+('005','Quần short xám','3','Nam nữ đều có thể mặc','22/10/2022','230.000 VNĐ','/asset/img/quan-short1.jpg','20','1'),
+('006','Áo blazer nâu','3','Mặc cùng quần âu và áo sơ mi là hết sảy','22/10/2022','500.000 VNĐ','/asset/img/ao-blazer1.jpg','20','1'),
+('007','Áo Vest xanh biển','3','Trông bạn sẽ hòa mình vào biển cả nếu mặc chiếc vest này','22/10/2022','1.500.000 VNĐ','/asset/img/ao-vest1.jpg','20','1')
