@@ -116,3 +116,25 @@ values
 ('005','Quần short xám','3','Nam nữ đều có thể mặc','22/10/2022','230.000 VNĐ','/asset/img/quan-short1.jpg','20','1'),
 ('006','Áo blazer nâu','3','Mặc cùng quần âu và áo sơ mi là hết sảy','22/10/2022','500.000 VNĐ','/asset/img/ao-blazer1.jpg','20','1'),
 ('007','Áo Vest xanh biển','3','Trông bạn sẽ hòa mình vào biển cả nếu mặc chiếc vest này','22/10/2022','1.500.000 VNĐ','/asset/img/ao-vest1.jpg','20','1')
+
+insert into users (`uuid`,`username`, `password` , `admin`)values
+('001','fat02','phat2002','1'),
+('002','thinhteddy','thinh2002','1'),
+('003','khoildm','khoi2002','1'),
+('004','vanA','11111','0'),
+('005','vanB','22222','0'),
+('006','thiC','33333','0'),
+('007','ThiD','44444','0'),
+('008','vanE','55555','0')
+
+insert into admins (`uuid` ,`full_name`, `email` ,`phone_number` ) values
+('001','Trần Thịnh Phát','7611quanggbinhhh@gmail.com','0353583372'),
+('002','Phạm Huy Cường Thịnh','thinhpham20@gmail.com','0988202789'),
+('003','Lê Đặng Minh Khôi','khoile22@gmail.com','0875666812')
+
+insert into customers( `uuid`, `full_name`,`email`,`phone_number`, `address`,`create_date`,`user_avt`, `banned` )values
+('004','Nguyễn Văn A','','0123456789','Quận 1,tp.Hồ Chí minh','20/12/2020',Null,'0'),
+('005','Trần Văn B','','0987654321','Quận 10,tp.Hồ Chí minh','12/1/2021',Null,'0'),
+('006','Lê Thị C','','0564738291','Quận 5,tp.Hồ Chí minh','17/1/2021',Null,'0'),
+('007','Phan Thị D','','0876125321','Quận 7,tp.Hồ Chí minh','30/2/2021',Null,'0'),
+('008','Cao văn E','','0999222121','Quận 3,tp.Hồ Chí minh','8/3/2021',Null,'0')
