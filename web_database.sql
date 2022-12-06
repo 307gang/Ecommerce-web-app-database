@@ -116,6 +116,12 @@ insert into products (`product_id`,`product_name` , `brand_id`, `description`, `
 ('006','Áo blazer nâu','3','Mặc cùng quần âu và áo sơ mi là hết sảy','2022/10/22','500','/asset/img/ao-blazer1.jpg','20','1'),
 ('007','Áo Vest xanh biển','4','Trông bạn sẽ hòa mình vào biển cả nếu mặc chiếc vest này','2022/10/22','1500','/asset/img/ao-vest1.jpg','20','1'),
 ('008','Quần kaki xanh đen','4','Sự kết hợp tuyệt vời của màu xanh và màu đen khiến bạn ngon giai hơn','2019/10/22','600','/asset/img/quan-kaki1.jpg','20','1');
+('009','Áo hoodie unisex','1','Áo khoác ấm áp dành cho cả nam và nữ','2019/10/22','350','chua co ','20','1'),
+('010','Áo tank top nam','1','Tôn lên vẻ đàn ông và cơ bắp của bạn','2019/11/21','500','chua co','20','1'),
+('011','Đầm dạ hội cao cấp','3','Những người phụ nữ trong bộ trang phục này sẽ trở nên quyễn rũ hơn','2020/1/1','1000','chua co','20','1'),
+('012','Quần jogger nữ cực chất','2','Chất chơi người dơi với giá cả phải chăng','2020/1/1','300','chua co','21','1'),
+('013','Chân váy xếp ly','4',' Váy thiết kế kiểu dáng thời trang, có kèm đai xinh','2020/1/1','350','chua co','20','1'),
+('014','Quần short nam đen','2','Quần short nam màu đen chất vải wdven cao cấp mới nhất ','2020/1/1','400','chua co','20','1');
 
 insert into users (`uuid`,`username`, `password` , `admin`)values
 ('001','fat02','phat2002','1'),
@@ -145,6 +151,7 @@ insert into categories(`category_id`,`category_name`) values
 ('3','Váy'),
 ('4','Đầm');
 
+
 insert into category_product (`category_id`,`product_id` ) values
 ('1','001'),
 ('2','002'),
@@ -153,4 +160,13 @@ insert into category_product (`category_id`,`product_id` ) values
 ('2','005'),
 ('1','006'),
 ('1','007'),
-('2','008');
+('2','008'),
+('1','009'),
+('1','010'),
+('4','011'),
+('2','012'),
+('3','013'),
+('2','014');
+
+
+
