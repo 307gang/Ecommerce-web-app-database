@@ -102,20 +102,19 @@ create table order_product(
 );
 
 insert into brands ( `brand_id`,`brand_name` ,`create_date`) values
-('1','Adidas','22/02/2022'),
-('2','Nike','22/02/2022'),
-('3','Zara','22/02/2022'),
-('4','Viettien','22/02/2022')
+('1','Adidas','2020/12/10'),
+('2','Nike','2020/12/10'),
+('3','Zara','2020/12/10'),
+('4','Viettien','2020/12/10');
 
-insert into products (`product_id`,`product_name` , `brand_id`, `description`, `created_date`, `price`, `product_image`, `product_stock`, `hidden`) 
-values
-('001','Áo thun xanh mint','1','Hàng Việt Nam dành cho người Việt nam chất lượng cao','22/10/2022','300.000 VNĐ','/asset/img/ao-thun1.jpg','20','1'),
-('002','Quần jeans đen','1','danh cho nguoi gay','22/10/2022','350.000 VNĐ','/asset/img/quan-jean1.jpg','20','1'),
-('003','Váy JK xanh biển','2','Được may từ vải cotton chất lượng cao','22/10/2022','200.000 VNĐ','/asset/img/vay-jk1.jpg','20','1'),
-('004','Váy Sunflower','2','Váy sịn sò mặc vào là xinh nhé','22/10/2022','950.000 VNĐ','/asset/img/dam-hoa.jpg','20','1'),
-('005','Quần short xám','3','Nam nữ đều có thể mặc','22/10/2022','230.000 VNĐ','/asset/img/quan-short1.jpg','20','1'),
-('006','Áo blazer nâu','3','Mặc cùng quần âu và áo sơ mi là hết sảy','22/10/2022','500.000 VNĐ','/asset/img/ao-blazer1.jpg','20','1'),
-('007','Áo Vest xanh biển','3','Trông bạn sẽ hòa mình vào biển cả nếu mặc chiếc vest này','22/10/2022','1.500.000 VNĐ','/asset/img/ao-vest1.jpg','20','1')
+insert into products (`product_id`,`product_name` , `brand_id`, `description`, `created_date`, `price`, `product_image`, `product_stock`, `hidden`) values
+('001','Áo thun xanh mint','1','Hàng Việt Nam dành cho người Việt nam chất lượng cao','2022/10/22','300','/asset/img/ao-thun1.jpg','20','1'),
+('002','Quần jeans đen','1','danh cho nguoi gay','2022/10/22','350','/asset/img/quan-jean1.jpg','20','1'),
+('003','Váy JK xanh biển','2','Được may từ vải cotton chất lượng cao','2022/10/22','200','/asset/img/vay-jk1.jpg','20','1'),
+('004','Váy Sunflower','2','Váy sịn sò mặc vào là xinh nhé','2022/10/22','950','/asset/img/dam-hoa.jpg','20','1'),
+('005','Quần short xám','3','Nam nữ đều có thể mặc','2022/10/22','230','/asset/img/quan-short1.jpg','20','1'),
+('006','Áo blazer nâu','3','Mặc cùng quần âu và áo sơ mi là hết sảy','2022/10/22','500','/asset/img/ao-blazer1.jpg','20','1'),
+('007','Áo Vest xanh biển','3','Trông bạn sẽ hòa mình vào biển cả nếu mặc chiếc vest này','2022/10/22','1500','/asset/img/ao-vest1.jpg','20','1');
 
 insert into users (`uuid`,`username`, `password` , `admin`)values
 ('001','fat02','phat2002','1'),
@@ -125,16 +124,16 @@ insert into users (`uuid`,`username`, `password` , `admin`)values
 ('005','vanB','22222','0'),
 ('006','thiC','33333','0'),
 ('007','ThiD','44444','0'),
-('008','vanE','55555','0')
+('008','vanE','55555','0');
 
 insert into admins (`uuid` ,`full_name`, `email` ,`phone_number` ) values
 ('001','Trần Thịnh Phát','7611quanggbinhhh@gmail.com','0353583372'),
 ('002','Phạm Huy Cường Thịnh','thinhpham20@gmail.com','0988202789'),
-('003','Lê Đặng Minh Khôi','khoile22@gmail.com','0875666812')
+('003','Lê Đặng Minh Khôi','khoile22@gmail.com','0875666812');
 
 insert into customers( `uuid`, `full_name`,`email`,`phone_number`, `address`,`create_date`,`user_avt`, `banned` )values
-('004','Nguyễn Văn A','','0123456789','Quận 1,tp.Hồ Chí minh','20/12/2020',Null,'0'),
-('005','Trần Văn B','','0987654321','Quận 10,tp.Hồ Chí minh','12/1/2021',Null,'0'),
-('006','Lê Thị C','','0564738291','Quận 5,tp.Hồ Chí minh','17/1/2021',Null,'0'),
-('007','Phan Thị D','','0876125321','Quận 7,tp.Hồ Chí minh','30/2/2021',Null,'0'),
-('008','Cao văn E','','0999222121','Quận 3,tp.Hồ Chí minh','8/3/2021',Null,'0')
+('004','Nguyễn Văn A','','0123456789','Quận 1,tp.Hồ Chí minh','2020/1/12',Null,'0'),
+('005','Trần Văn B','','0987654321','Quận 10,tp.Hồ Chí minh','2020/2/13',Null,'0'),
+('006','Lê Thị C','','0564738291','Quận 5,tp.Hồ Chí minh','2020/6/24',Null,'0'),
+('007','Phan Thị D','','0876125321','Quận 7,tp.Hồ Chí minh','2021/1/1',Null,'0'),
+('008','Cao văn E','','0999222121','Quận 3,tp.Hồ Chí minh','2021/12/1',Null,'0');
