@@ -114,7 +114,8 @@ insert into products (`product_id`,`product_name` , `brand_id`, `description`, `
 ('004','Váy Sunflower','2','Váy sịn sò mặc vào là xinh nhé','2022/10/22','950','/asset/img/dam-hoa.jpg','20','1'),
 ('005','Quần short xám','3','Nam nữ đều có thể mặc','2022/10/22','230','/asset/img/quan-short1.jpg','20','1'),
 ('006','Áo blazer nâu','3','Mặc cùng quần âu và áo sơ mi là hết sảy','2022/10/22','500','/asset/img/ao-blazer1.jpg','20','1'),
-('007','Áo Vest xanh biển','3','Trông bạn sẽ hòa mình vào biển cả nếu mặc chiếc vest này','2022/10/22','1500','/asset/img/ao-vest1.jpg','20','1');
+('007','Áo Vest xanh biển','4','Trông bạn sẽ hòa mình vào biển cả nếu mặc chiếc vest này','2022/10/22','1500','/asset/img/ao-vest1.jpg','20','1'),
+('008','Quần kaki xanh đen','4','Sự kết hợp tuyệt vời của màu xanh và màu đen khiến bạn ngon giai hơn','2019/10/22','600','/asset/img/quan-kaki1.jpg','20','1');
 
 insert into users (`uuid`,`username`, `password` , `admin`)values
 ('001','fat02','phat2002','1'),
@@ -137,3 +138,19 @@ insert into customers( `uuid`, `full_name`,`email`,`phone_number`, `address`,`cr
 ('006','Lê Thị C','','0564738291','Quận 5,tp.Hồ Chí minh','2020/6/24',Null,'0'),
 ('007','Phan Thị D','','0876125321','Quận 7,tp.Hồ Chí minh','2021/1/1',Null,'0'),
 ('008','Cao văn E','','0999222121','Quận 3,tp.Hồ Chí minh','2021/12/1',Null,'0');
+
+insert into categories(`category_id`,`category_name`) values
+('1','Áo'),
+('2','Quần'),
+('3','Váy'),
+('4','Đầm');
+
+insert into category_product (`category_id`,`product_id` ) values
+('1','001'),
+('2','002'),
+('3','003'),
+('4','004'),
+('2','005'),
+('1','006'),
+('1','007'),
+('2','008');
